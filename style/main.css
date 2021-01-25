@@ -1,0 +1,241 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Lora', serif;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.navbar .logo {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.navbar .nav-link {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: 'Assistant', sans-serif;
+  margin-left: 20px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  margin-top: -80px;
+  padding: 180px 139px 80px;
+  border-radius: 0 0 40px 40px;
+  overflow: hidden;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+header p {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+header .btn-contact {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+header .btn-download {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 50px;
+  color: white;
+  margin-left: 30px;
+}
+
+header .btn-download:hover {
+  text-decoration: none;
+}
+
+header .foto {
+  margin-top: -200px;
+}
+
+.section-portfolio .section-portfolio-heading {
+  margin-top: 50px;
+}
+
+.design {
+  margin-top: 30px;
+}
+
+.design .design-foto {
+  margin-top: 30px;
+}
+
+.design .design-foto .figure-img {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(0, -40px);
+          transform: translate(0, -40px);
+  position: relative;
+}
+
+.design .design-foto .figure-img:hover a {
+  opacity: 1;
+}
+
+.design .design-foto .figure-img a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.design .design-foto .muncul {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.developer {
+  margin-top: 30px;
+}
+
+.developer-foto {
+  margin-top: 30px;
+}
+
+.developer-foto .figure-img {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translate(0, -40px);
+          transform: translate(0, -40px);
+  position: relative;
+}
+
+.developer-foto .figure-img:hover a {
+  opacity: 1;
+}
+
+.developer-foto .figure-img a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
+}
+
+.developer-foto .muncul {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.why-choose-me {
+  margin-top: 50px;
+}
+
+.why-choose-me .wcm {
+  margin-top: 30px;
+}
+
+.why-choose-me h4 {
+  margin-top: 16px;
+}
+
+.why-choose-me p {
+  margin-top: 16px;
+}
+
+.tools-skils {
+  margin-top: 50px;
+}
+
+.tools-skils .foto-tools {
+  margin-top: 30px;
+}
+
+.tools-skils .foto-tools img {
+  padding: 16px 16px 0;
+}
+
+.contact-us {
+  margin-top: 50px;
+}
+
+.contact-us .foto-contact {
+  margin-top: 30px;
+}
+
+.contact-us .foto-contact img {
+  padding: 0 16px 0;
+}
+
+footer {
+  width: 100%;
+  margin-top: 50px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  border-radius: 40px 40px 0 0;
+}
+
+footer p {
+  margin-top: 50px;
+}
+
+@media (max-width: 991.98px) {
+  header {
+    background-color: black;
+    color: white;
+    margin-top: -80px;
+    padding: 100px 0 40px;
+    text-align: center;
+  }
+  header h1 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  header p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  header .btn-contact {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  header .btn-download {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    margin-top: 50px;
+    color: white;
+    margin-left: 0px;
+  }
+  header .btn-download:hover {
+    text-decoration: none;
+  }
+  header .foto {
+    margin-top: -200px;
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
