@@ -29,7 +29,7 @@ header {
     background-color: black;
     color: white;
     margin-top: -80px;
-    padding: 180px 139px 80px;
+    padding: 180px 10% 80px;
     border-radius: 0 0 40px 40px;
     overflow: hidden;
 
@@ -222,7 +222,7 @@ footer {
         background-color: black;
         color: white;
         margin-top: -80px;
-        padding: 180px 20PX 40px;
+        padding: 180px 10% 40px;
 
         h1 {
             font-weight: bold;
@@ -257,7 +257,7 @@ footer {
 
         .foto {
             margin-top: -100px;
-            width: 15%;
+            display: none;
         }
     }
 
