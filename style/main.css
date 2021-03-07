@@ -1,11 +1,7 @@
 body {
   background-color: white;
   color: black;
-  font-family: 'Lora', serif;
-}
-
-.navbar {
-  background-color: black !important;
+  font-family: "Lora", serif;
 }
 
 .navbar .logo {
@@ -16,67 +12,66 @@ body {
 .navbar .nav-link {
   font-size: 24px;
   font-weight: 400;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   margin-left: 20px;
 }
 
-header {
-  background-color: black;
+.jumbotron {
   color: white;
-  margin-top: -80px;
-  padding: 200px 10% 80px;
-  border-radius: 0 0 40px 40px;
   overflow: hidden;
+  padding-top: 90px;
+  margin-bottom: -10px;
 }
 
-header h1 {
+.jumbotron h1 {
   font-weight: bold;
   font-size: 50px;
 }
 
-header p {
-  font-family: 'Assistant', sans-serif;
+.jumbotron p {
+  font-family: "Assistant", sans-serif;
   font-weight: 200;
   font-size: 25px;
 }
 
-header .btn-contact {
-  font-family: 'Assistant', sans-serif;
+.jumbotron .btn-contact {
+  font-family: "Assistant", sans-serif;
   font-weight: 600;
   font-size: 25px;
-  margin-top: 50px;
 }
 
-header .btn-download {
-  font-family: 'Assistant', sans-serif;
+.jumbotron .btn-download {
+  font-family: "Assistant", sans-serif;
   font-weight: 200;
   font-size: 20px;
-  margin-top: 50px;
   color: white;
-  margin-left: 30px;
 }
 
-header .btn-download:hover {
+.jumbotron .btn-download:hover {
   text-decoration: none;
 }
 
-header .foto {
-  margin-top: -200px;
+.section-about {
+  margin-top: 50px;
+}
+
+.section-about .content-about {
+  margin-top: 30px;
+}
+
+.section-about .content-about p {
+  line-height: 35px;
 }
 
 .section-portfolio .section-portfolio-heading {
   margin-top: 50px;
 }
 
-.design {
+.section-portfolio .design-foto {
   margin-top: 30px;
 }
 
-.design .design-foto {
-  margin-top: 30px;
-}
-
-.design .design-foto .figure-img {
+.section-portfolio .design-foto .figure-img {
   opacity: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -85,11 +80,11 @@ header .foto {
   position: relative;
 }
 
-.design .design-foto .figure-img:hover a {
+.section-portfolio .design-foto .figure-img:hover a {
   opacity: 1;
 }
 
-.design .design-foto .figure-img a {
+.section-portfolio .design-foto .figure-img a {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,10 +96,14 @@ header .foto {
   transition: opacity 0.7s;
 }
 
-.design .design-foto .muncul {
+.section-portfolio .design-foto .muncul {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+.design {
+  margin-top: 30px;
 }
 
 .developer {
@@ -172,11 +171,8 @@ header .foto {
 
 footer {
   width: 100%;
-  margin-top: 50px;
   height: 100px;
-  background-color: black;
   color: white;
-  border-radius: 40px 40px 0 0;
 }
 
 footer p {
@@ -195,18 +191,18 @@ footer p {
     font-size: 30px;
   }
   header p {
-    font-family: 'Assistant', sans-serif;
+    font-family: "Assistant", sans-serif;
     font-weight: 200;
     font-size: 18px;
   }
   header .btn-contact {
-    font-family: 'Assistant', sans-serif;
+    font-family: "Assistant", sans-serif;
     font-weight: 600;
     font-size: 20px;
     margin-top: 30px;
   }
   header .btn-download {
-    font-family: 'Assistant', sans-serif;
+    font-family: "Assistant", sans-serif;
     font-weight: 200;
     font-size: 18px;
     margin-top: 50px;

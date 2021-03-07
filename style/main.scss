@@ -1,243 +1,222 @@
 body {
-    background-color: white;
-    color: black;
-    font-family: 'Lora', serif;
+  background-color: white;
+  color: black;
+  font-family: "Lora", serif;
 }
-
 
 // navbar
 .navbar {
+  .logo {
+    font-size: 35px;
+    font-weight: 400;
+  }
 
-    background-color: black !important;
-
-    .logo {
-        font-size: 35px;
-        font-weight: 400;
-    }
-
-    .nav-link {
-        font-size: 24px;
-        font-weight: 400;
-        font-family: 'Assistant', sans-serif;
-        margin-left: 20px;
-    }
+  .nav-link {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Assistant", sans-serif;
+    margin-left: 20px;
+  }
 }
-
 
 // header
-header {
-    background-color: black;
+.jumbotron {
+  color: white;
+  overflow: hidden;
+  padding-top: 90px;
+  margin-bottom: -10px;
+
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  p {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+  }
+
+  .btn-contact {
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .btn-download {
+    font-family: "Assistant", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
     color: white;
-    margin-top: -80px;
-    padding: 200px 10% 80px;
-    border-radius: 0 0 40px 40px;
-    overflow: hidden;
 
-    h1 {
-        font-weight: bold;
-        font-size: 50px;
+    &:hover {
+      text-decoration: none;
     }
-
-    p {
-        font-family: 'Assistant', sans-serif;
-        font-weight: 200;
-        font-size: 25px;
-    }
-
-    .btn-contact {
-        font-family: 'Assistant', sans-serif;
-        font-weight: 600;
-        font-size: 25px;
-        margin-top: 50px;
-    }
-
-    .btn-download {
-        font-family: 'Assistant', sans-serif;
-        font-weight: 200;
-        font-size: 20px;
-        margin-top: 50px;
-        color: white;
-        margin-left: 30px;
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-    .foto {
-        margin-top: -200px;
-    }
+  }
 }
-
 
 // Main
+.section-about {
+  margin-top: 50px;
+  .content-about {
+    margin-top: 30px;
+    p {
+      line-height: 35px;
+    }
+  }
+}
+
 .section-portfolio {
-    .section-portfolio-heading {
-        margin-top: 50px;
-    }
-}
-
-
-.design {
-    margin-top: 30px;
-
-    .design-foto {
-        margin-top: 30px;
-
-        .figure-img {
-            opacity: 0;
-            transition: 0.5s;
-            transform: translate(0, -40px);
-            position: relative;
-
-            &:hover a {
-                opacity: 1;
-            }
-
-            a {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 8px;
-                background-color: rgba(0, 0, 0, 0.5);
-                opacity: 0;
-                transition: opacity 0.7s;
-            }
-
-        }
-
-        .muncul {
-            opacity: 1;
-            transform: translate(0, 0);
-        }
-
-
-    }
-}
-
-
-
-.developer {
-    margin-top: 30px;
-}
-
-.developer-foto {
+  .section-portfolio-heading {
+    margin-top: 50px;
+  }
+  .design-foto {
     margin-top: 30px;
 
     .figure-img {
+      opacity: 0;
+      transition: 0.5s;
+      transform: translate(0, -40px);
+      position: relative;
+
+      &:hover a {
+        opacity: 1;
+      }
+
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 8px;
+        background-color: rgba(0, 0, 0, 0.5);
         opacity: 0;
-        transition: 0.5s;
-        transform: translate(0, -40px);
-        position: relative;
-
-        &:hover a {
-            opacity: 1;
-        }
-
-        a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 8px;
-            background-color: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            transition: opacity 0.7s;
-        }
+        transition: opacity 0.7s;
+      }
     }
 
     .muncul {
-        opacity: 1;
-        transform: translate(0, 0);
+      opacity: 1;
+      transform: translate(0, 0);
     }
+  }
 }
 
+.design {
+  margin-top: 30px;
+}
+
+.developer {
+  margin-top: 30px;
+}
+
+.developer-foto {
+  margin-top: 30px;
+
+  .figure-img {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate(0, -40px);
+    position: relative;
+
+    &:hover a {
+      opacity: 1;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 8px;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.7s;
+    }
+  }
+
+  .muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 
 .tools-skils {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    .foto-tools {
-        margin-top: 30px;
+  .foto-tools {
+    margin-top: 30px;
 
-        img {
-            padding: 16px 16px 0;
-        }
+    img {
+      padding: 16px 16px 0;
     }
+  }
 }
 
 .contact-us {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    .foto-contact {
-        margin-top: 30px;
+  .foto-contact {
+    margin-top: 30px;
 
-        img {
-            padding: 0 16px 0;
-        }
+    img {
+      padding: 0 16px 0;
     }
+  }
 }
 
 footer {
-    width: 100%;
+  width: 100%;
+  height: 100px;
+  color: white;
+
+  p {
     margin-top: 50px;
-    height: 100px;
-    background-color: black;
-    color: white;
-    border-radius: 40px 40px 0 0;
-
-    p {
-        margin-top: 50px;
-    }
-
+  }
 }
 
-
-
 @media (max-width: 991.98px) {
+  // header
+  header {
+    background-color: black;
+    color: white;
+    margin-top: -80px;
+    padding: 180px 10% 40px;
 
-    // header
-    header {
-        background-color: black;
-        color: white;
-        margin-top: -80px;
-        padding: 180px 10% 40px;
-
-        h1 {
-            font-weight: bold;
-            font-size: 30px;
-        }
-
-        p {
-            font-family: 'Assistant', sans-serif;
-            font-weight: 200;
-            font-size: 18px;
-        }
-
-        .btn-contact {
-            font-family: 'Assistant', sans-serif;
-            font-weight: 600;
-            font-size: 20px;
-            margin-top: 30px;
-        }
-
-        .btn-download {
-            font-family: 'Assistant', sans-serif;
-            font-weight: 200;
-            font-size: 18px;
-            margin-top: 50px;
-            color: white;
-            margin-left: 0px;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-        .foto {
-            margin-top: -100px;
-            display: none;
-        }
+    h1 {
+      font-weight: bold;
+      font-size: 30px;
     }
 
+    p {
+      font-family: "Assistant", sans-serif;
+      font-weight: 200;
+      font-size: 18px;
+    }
+
+    .btn-contact {
+      font-family: "Assistant", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    .btn-download {
+      font-family: "Assistant", sans-serif;
+      font-weight: 200;
+      font-size: 18px;
+      margin-top: 50px;
+      color: white;
+      margin-left: 0px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .foto {
+      margin-top: -100px;
+      display: none;
+    }
+  }
 }
