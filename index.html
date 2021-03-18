@@ -31,7 +31,7 @@
                 <a href="#portfolio" class="nav-link page-scroll">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a href="#contact-us" class="nav-link page-scroll">Contact Us</a>
+                <a href="#contact-us" class="nav-link page-scroll">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -131,18 +131,40 @@
 
       <section id="contact-us">
         <div class="container contact-us">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Contact Us</h2>
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>Contact Me</h2>
             </div>
           </div>
-          <div class="row foto-contact">
-            <div class="col text-center">
-              <a href="mailto:sutisna10chuza@gmail.com" target="_blank"><img src="images/gmail.png" alt="" /></a>
-              <a href="https://bit.ly/39XfM90" target="_blank"><img src="images/instagram.png" alt="" /></a>
-              <a href="https://bit.ly/2Nwawl8" target="_blank"><img src="images/whatsapp.png" alt="" /></a>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form name="sutisna-contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" >                  
+                </div>         
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">                  
+                </div>         
+                <div class="form-group">
+                  <label for="pesan">Message</label>
+                  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-kirim">Send</button>
+                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+              </form>
             </div>
-          </div>
+          </div>     
         </div>
       </section>
     </main>
@@ -167,5 +189,34 @@
     <script src="library/jquery/jquery-3.5.1.min.js"></script>
     <script src="library/bootstrap/js/bootstrap.min.js"></script>
     <script src="script/main.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby9ESp7Xy3wQV0YoNAFSsx_LwKstP3PGrrLslBGUvOmb0sMsGvabsLVe3n2NQHyqUMA/exec'
+      const form = document.forms['sutisna-contact-form']
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        // ketika tombol submit di klik
+        // Tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // Tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // Tampilkan Alert
+            myAlert.classList.toggle('d-none');
+            // reset form
+            form.reset();
+            console.log('Success!', response)
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
